@@ -1,3 +1,11 @@
+terraform {
+    backend "gcs" { 
+      bucket  = "mujeergcp1"
+      prefix  = "prod"
+    }
+}
+
+
 provider "google" {
   project = "moonlit-order-440304-i7"  # Replace with your project ID
   region  = "us-central1"       # Replace with your desired region
