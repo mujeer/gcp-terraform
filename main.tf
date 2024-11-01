@@ -9,7 +9,6 @@ terraform {
 provider "google" {
   project = "moonlit-order-440304-i7"  # Replace with your project ID
   region  = "us-central1"       # Replace with your desired region
-  credentials = file("service-account.json")
 }
 
 resource "google_compute_network" "vpc_network" {
