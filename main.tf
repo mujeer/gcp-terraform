@@ -1,4 +1,5 @@
-terraform {
+# backend configuration
+terraform {  
     backend "gcs" { 
       bucket  = "mujeergcp1"
       prefix  = "prod"
